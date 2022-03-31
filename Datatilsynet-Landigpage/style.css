@@ -1,0 +1,229 @@
+/* Reset everything*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /*Styling af header*/
+  .nav ul{
+  list-style: none;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display:-o-flex;
+  display:flex;
+  }
+  .nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding:1.5rem; 
+    transition: all .5s ease;
+
+  }
+  .nav ul li a:hover{
+    color:#C69E56;
+    background: white; 
+  }
+  .nav{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  margin:auto;
+  font-family: effra,sans-serif;
+font-weight: 400;
+font-style: normal;
+  }
+  .nav img{
+  width: 250px;
+  height:auto;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  }
+  .header{
+    overflow: hidden;
+  }
+/* Styling af Online spørgeskema part*/
+  .overskrift1{
+    color: white;
+    text-align: center;
+    font-family: effra,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    grid-area: 1/2;
+    background: #232740;
+    padding-top: 25px;
+  } 
+  .container1{
+   background: #232740;
+    height: 400px;
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+   justify-content: center;
+   align-items:center;
+   
+  }
+  .line{
+    color: #F2F2F2;
+  }
+
+  .tekstomspoergeskema{
+    color: aliceblue;
+    height: 150px;
+    width: 400px;
+    text-align: justify;
+    padding: 25px;
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .answer{
+    height: 50px;
+    width: 130px;
+    background-color: #C69E56;
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+  }
+  .answer button:hover{
+    color:black;
+    background:white;
+  }
+  /* Styling af om sektionen*/
+  .container2{
+        display: flex;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 15px;
+        padding: 15px;
+        height: 500px;
+        width: 100%;
+        justify-content: center;
+  }
+  .overskrift2{
+    display: grid;
+    color: #232740;
+    top: 20px;
+    grid-column: span 4;
+    grid-template-rows: 1fr;
+    font-family: effra,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .box1, .box2, .box3{
+    margin: 75px 25px 0px 25px;
+    padding: 25px;
+    border-radius: 5px;
+    display: grid; 
+    justify-items: center;
+    text-align: justify;
+    grid-column: 2fr 1fr 1fr;
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+  } 
+  .box1{
+    display: grid;
+    background-color: #F2F2F2;
+    height: 300px;
+    width: 300px;
+    grid-column: span 1fr;
+  }
+  .box2{
+    display: grid;
+    background-color: #F2F2F2;
+    height: 300px;
+    width: 300px;
+    grid-column: span 1fr;
+  }
+  .box3{
+    display: grid;
+    background-color: #F2F2F2;
+    height: 300px;
+    width: 300px;
+    grid-column: span 1fr;
+
+  }
+  .container3{
+      background-color: #232740;
+      height: 500px;
+      width: 100%;
+        display: flex;
+        justify-content: space-around;
+}
+.overskrift3{
+  color: white;
+  text-align: center;
+  font-family: effra,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  grid-area: 1/2;
+  background: #232740;
+  padding-top: 25px;
+}
+.kontaktbox{
+  color: rgb(255, 255, 255);
+  display: grid;
+  height: 140px;
+  width: 350px;
+  grid-column: 1/2;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 5px #C69E56;
+  -webkit-box-shadow: 0 0 10px #C69E56;
+  box-shadow: 0 0 15px #C69E56;
+  font-style: normal;
+  margin-top: 150px;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  font-size: 17px;
+  padding: 20px;
+}
+.container{
+  color: rgb(255, 255, 255);
+  display: grid;
+  grid-column: 3/4;
+  width: 400px;
+  margin: 30px;
+  margin-top: 100px;
+  font-family: gill-sans-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.kontaktknap{
+  height: 50px;
+  width: 150px;
+  background-color: #C69E56;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 20px;
+  margin-top: 25px;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  font-family: gill-sans-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#besked{
+  margin-top: 25px;
+}
+.gdpr, .afgørelser, .dinerettigheder{
+  font-family: effra,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #232740;;
+}
+

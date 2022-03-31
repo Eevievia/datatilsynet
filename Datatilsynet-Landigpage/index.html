@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datatilsynet | Forside</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+    <!--FontAwesome Stylesheet-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Overskrift adobe font-->
+      <link rel="stylesheet" href="https://use.typekit.net/qvr8ysr.css">
+      <link rel="stylesheet" href="https://use.typekit.net/qvr8ysr.css">
+      <link rel="stylesheet" href="https://use.typekit.net/qvr8ysr.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <img src="imgs/datatilsynetlogo.png" alt="datatilsynetlogo"/>
+    <ul>
+      <li><a href="#">Om os</a></li>
+      <li><a href="#">Nyheder</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul> 
+    
+      </div>
+ </div>
+ <h1 class="overskrift1">ONLINE  SPØRGERSKEMA</h1>
+    <div class="container1">
+      <!--NEED A LINE-->
+      <div class="line">________________________</div>
+      <div class="tekstomspoergeskema">
+        <p>
+            Hvor meget ved du om datatilsynet? Vi har med omtanke lavet et online spørgeskema, som vi håber at du kan hjælpe os med at besvare. På den måde kan vi komme lidt tættere på vores undersøgelse, omhandlende hvor meget danskerne generelt set ved om datatilsynet og digitale rettigheder. For at besvare spørgeskemaet skal du være mellem 13 og 18 år, da det er vores primære målgruppe i denne undersøgelse. 
+        </p>
+      </div>
+      <div class="button">
+        <button class="answer">Svar her</button>
+      </div>
+    </div>
+    <div class="overskrift2">
+      <h1>OM DATATILSYNET</h1>
+    </div>
+    <div class="container2">
+      <div class="box1">
+        <h2 class="gdpr">GDPR</h2>
+        <i class="fa fa-users" style="font-size:36px" aria-hidden="true" ></i>
+        <p class="gdprtekst">
+          Står for “General Data Protection Regulation” og kaldes i almindelig tale for persondataforordningen. Kort fortalt er princippet bag GDPR, at vi alle har ret til et privatliv. Det skal alene være op til den enkelte, hvorvidt vores oplysninger skal deles.
+        </p>
+      </div>
+      <div class="box2">
+        <h2 class="afgørelser">AFGØRELSER</h2>
+        <i class="fa fa-thumbs-up" style="font-size:36px" aria-hidden="true"></i>
+        <p class="afgtekst">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi,
+          enim alias reiciendis facere magnam illum consequatur impedit.
+          Incidunt, ipsam itaque fugiat ex quaerat omnis ipsa?
+        </p>
+      </div>
+      <div class="box3">
+        <h2 class="dinerettigheder">DINE RETTIGHEDER</h2>
+        <i class="fa fa-check-circle" style="font-size:36px" aria-hidden="true"></i>
+        <p class="dinerettekst">
+          Når du er online, har du diverse rettigheder som går inden over persondataloven. Når der behandles oplysninger om dig, har du en række rettigheder over for den, som behandler dine oplysninger.
+        </p>
+      </div>
+    </div>
+    <div class="overskrift3">
+      <h1>KONTAKT</h1>
+    </div>
+    <div class="container3">
+      <div class="kontaktbox">
+        <p>
+          Er du interesseret i at høre om dine rettigheder og mere om datatilsynet, er du mere end velkommen til at kontakte os. Vores email står åbent for store som små spørgsmål du kunne have behov for at høre svar på. Derudover er konstruktiv kritik altid velkomment.
+        </p>
+      </div>
+      <div class="kontakt">
+        <div class="container">
+          <label for="name"> Navn</label>
+          <input type="text" id="name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+
+          <label for="besked">Besked</label>
+          <textarea id="besked" cols="80" rows="8"></textarea>
+          <button onclick="sendEmail()" class="kontaktknap">Send</button>
+        </div>
+        <script src="script.js"></script>
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+          (function () {
+            emailjs.init("9OTCF8spA9d8vax2D");
+          })();
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
